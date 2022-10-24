@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+h1,
+h2 {
+  font-family: 'Poppins', sans-serif;
+
+}
+
+label {
+  position: relative;
+}
+
+label:before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  background: url("./search_FILL0_wght500_GRAD0_opsz24.svg") center / contain no-repeat;
+}
+
+input {
+  padding: 10px 30px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  top: auto;
+  bottom: 21px;
+  right: 14px;
+  left: auto;
+}
+
+/* .sidenav {
+  height: -webkit-fill-available;
+  max-height: 100%;
+} */
+
+.description {
+  position: relative;
+  font-size: 14px;
+  color: white;
+  /* width: 800px; Could be anything you like. */
+}
+
+.discText {
+  position: relative;
+  word-wrap: break-word;
+  max-height: 9vw;
+  line-height: 1.2em;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+/*! CSS Used from: https://anikatsu.pages.dev/files/css/style.css */
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  z-index: 10 !important ;
+  cursor: pointer !important;
+}
+
+.swiper-navigation {
+  position: absolute !important;
+  bottom: 20px !important;
+  right: 10px !important;
+  width: 40px !important;
+  height: auto !important;
+  z-index: 10 !important;
+}
+
+.swiper-button {
+  background: #2a2b31 !important;
+  color: #fff !important;
+  font-size: 18px !important;
+  width: 40px !important;
+  height: 40px !important;
+  line-height: 40px !important;
+  text-align: center !important;
+  border-radius: 100% !important;
+  display: inline-block !important;
+  margin: 3px 0 !important;
+}
+
+.swiper-button:hover {
+  background: #C3073F !important;
+  color: #111 !important;
+}
+
+.swiper-pagination-bullet-active {
+     background-color: #f54378 !important;
+}
+
+
+.item-poster::after{
+  content: "";
+  position: absolute;
+  top: auto;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  background: linear-gradient(0deg,#2a2c31 0,rgba(42,44,49,.7) 100%);
+}
+.item-poster:hover .item-poster::after{
+  opacity: 0.8;
+ 
+}
+
+.anime-poster-ahref i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  z-index: 10;
+}
+
+.slide::after{
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background: #202125; */
+  background: -moz-linear-gradient(0deg,#202125 0,rgba(32,33,37,0) 50%,#202125 100%);
+  background: -webkit-linear-gradient(0deg,#202125 0,rgba(32,33,37,0) 50%,#202125 100%);
+  /* background: linear-gradient(0deg,#202125 0,rgba(32,33,37,0) 50%,#202125 100%); */
+  z-index: 2;
+}
+
+
+.anime-name{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.3;
+}
+
+.fd-infor{
+  user-select: none;
+}
+ .img{
+  user-select: none;
+ }

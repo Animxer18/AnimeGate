@@ -1,0 +1,3 @@
+check or implement Swr => done
+
+Make Anime Card  global and reusable completly
