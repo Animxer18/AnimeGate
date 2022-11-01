@@ -1,17 +1,21 @@
 import React from 'react'
-
+import AnimeGateLogo from '../assests/logo.jpg'
+import {Link} from 'react-router-dom'
 const SideNav = () => {
   return (
     <div>
     <div className="sidenav flex flex-col w-[240px] h-[100%] fixed bg-[#25262d] text-white">
+      
     <div className="logo my-2 mt-16 mx-auto w-14">
-      <img src="./AnimeGate logo.jpg" alt="logo" />
+      <Link to="/">
+      <img src={AnimeGateLogo} alt="logo" />
+      </Link>
     </div>
     <hr className="w-24 mx-auto" />
     <div className="menu flex flex-col  my-4 ">
       {/* <h1  className='inline ml-6 font-bold '>Menu</h1> */}
-
-      <button className="btn   px-4 py-3 hover:bg-[#4e4e50] group  text-left my-2 mx-1 rounded-md mr-3   ">
+    <Link to={'/'}>
+      <button className="btn w-[93%]   px-4 py-3 hover:bg-[#4e4e50] group  text-left my-2 mx-1 rounded-md mr-3   ">
         <div className="flex">
           <svg
             className="group-hover:fill-[#C3073F] fill-white  mr-2"
@@ -24,6 +28,7 @@ const SideNav = () => {
           <h2 className="group-hover:text-[#C3073F] text-white"> Home</h2>
         </div>
       </button>
+    </Link>
       <button className="btn  px-4 py-3 hover:bg-[#4e4e50] group  text-left my-2 mx-1 rounded-md mr-3   ">
         <div className="flex  ">
           <svg

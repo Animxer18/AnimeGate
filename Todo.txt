@@ -1,3 +1,4 @@
 check or implement Swr => done
 
-Make Anime Card  global and reusable completly
+done => Make Anime Card  global and reusable completly
+make autoplay slider

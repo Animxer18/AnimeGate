@@ -11,11 +11,11 @@ function AnimeCardSlider(props) {
   if (!data) return <div></div>
   return (
     <div className="px-5">
-      <h1 className="ml-3">{props.criteria}</h1>
+      <h1 className="mb-3 font-extrabold text-xl">{props.criteria}</h1>
       <div className="item-wrap m-auto flex flex-wrap ">
         <Swiper
           slidesPerView={6}
-          spaceBetween={25}
+          spaceBetween={15}
           navigation={true}
           modules={[Navigation]}
           loop={true}
@@ -27,10 +27,10 @@ function AnimeCardSlider(props) {
                 id={item.id}
                 img={item.image}
                 tick_1st={item.type}
-                tick_2nd="2013"
+                tick_2nd={item.releaseDate}
                 title={item.title.userPreferred}
                 label_1st={item.genres[0]}
-                label_2nd={`${item.duration}m`}
+                label_2nd={`${item.duration}`}
                 link=""
                 link_title={`/info/${item.id}`}
                 usingInSlider={true}

@@ -8,11 +8,11 @@ const LatestAnimeSection = (props) => {
   if (!data) return <div></div>
   return (
     <div className="Latest p-5  ">
-          <h1 className="ml-3">
+          <h1 className="mb-3 font-extrabold text-xl">
             Latest Episodes ({props.subOrDub === "1" ? "Sub" : "Dub"})
           </h1>
             
-          <div class="item-wrap m-auto flex flex-wrap   ">
+          <div class=" m-auto grid grid-cols-6 gap-2   ">
           {data.results.map((item) => 
            <AnimeCard
                 id={item.episodeId}
@@ -22,7 +22,7 @@ const LatestAnimeSection = (props) => {
                 title={item.title}  
                 link={`/watch/${item.episodeId}`}
                 link_title={`/watch/${item.episodeId}`}
-                usingInSlider={false}
+                usingInSlider={true}
               />
              
             )}
