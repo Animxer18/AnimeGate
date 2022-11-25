@@ -31,7 +31,7 @@ function App() {
         <main_body className="body ml-[240px] text-white overflow-hidden bg-[#1a1a1d] w-[calc(100vw_-_240px)]">
         
           <Navbar />
-
+          
           
             <Routes>
               <Route path="/" element={<Home />} />
