@@ -3,12 +3,13 @@ import { Navigation } from "swiper";
 import useSWR from 'swr'
 import "swiper/css";
 import AnimeCard from "./AnimeCard"
+import AnimeCardSliderSkeleton from "./skeletons/AnimeCardSliderSkeleton";
 function AnimeCardSlider(props) {
 
   const { data, error } = useSWR('https://api.consumet.org/meta/anilist/popular')
 
   if (error) return <div>failed to load {console.log(error)}</div>
-  if (!data) return <div>Hey there is no data</div>
+  if (!data) return <div><AnimeCardSliderSkeleton/> </div>
   return (
     <div className="px-5">
       <h1 className="mb-3 font-extrabold text-xl">{props.criteria}</h1>

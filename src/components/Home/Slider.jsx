@@ -6,6 +6,7 @@ import "swiper/css";
 // import {fetcher} from '../constants/global'
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import SliderSkeleton from "../skeletons/SliderSkeleton";
 
 function Slider() {
     
@@ -14,7 +15,7 @@ function Slider() {
     const { data, error } = useSWR('https://api.consumet.org/meta/anilist/trending')
    
     if (error) return <div>failed to load</div>
-    if (!data) return <div>Loading animation or whatever here</div>
+    if (!data) return <div><SliderSkeleton/></div>
     return (
         <>
             <div className="p-5 rounded-lg">
