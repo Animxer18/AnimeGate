@@ -6,7 +6,7 @@ import AnimeCard from "./AnimeCard"
 import AnimeCardSliderSkeleton from "./skeletons/AnimeCardSliderSkeleton";
 function AnimeCardSlider(props) {
 
-  const { data, error } = useSWR('https://api.consumet.org/meta/anilist/popular')
+  const { data, error } = useSWR('https://animexer1-api.vercel.app/meta/anilist/popular')
 
   if (error) return <div>failed to load {console.log(error)}</div>
   if (!data) return <div><AnimeCardSliderSkeleton/> </div>
