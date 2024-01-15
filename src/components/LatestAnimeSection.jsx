@@ -9,8 +9,8 @@ const LatestAnimeSection = (props) => {
 
   
 
-  // const { data, error } = useSWR('https://api.consumet.org/meta/anilist/trending',{ refreshInterval: 18000 })
-  const { data, error } = useSWR(props.subOrDub === "sub" ? "https://api.consumet.org/anime/gogoanime/recent-episodes?type=1" : "https://api.consumet.org/anime/gogoanime/recent-episodes?type=2" )
+  // const { data, error } = useSWR('https://animexer1-api.vercel.app/meta/anilist/trending',{ refreshInterval: 18000 })
+  const { data, error } = useSWR(props.subOrDub === "sub" ? "https://animexer1-api.vercel.app/anime/gogoanime/recent-episodes?type=1" : "https://api.consumet.org/anime/gogoanime/recent-episodes?type=2" )
   // const { data, error } = useSWR(`/api/rss${props.subOrDub}.xml`,fetcherWithResInText
 
 
