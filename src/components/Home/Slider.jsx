@@ -10,11 +10,11 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import SliderSkeleton from "../skeletons/SliderSkeleton";
 const fetcher = (resource, init) => fetch(resource, init).then(res => res.json())
-preload("https://api.consumet.org/meta/anilist/trending",fetcher)
+preload("https://animexer1-api.vercel.app/meta/anilist/trending",fetcher)
 function Slider() {
     
     const [swiper, setSwiper] = useState(null);
-    const { data, error } = useSWR('https://api.consumet.org/meta/anilist/trending')
+    const { data, error } = useSWR('https://animexer1-api.vercel.app/meta/anilist/trending')
     
     
     if (error) return <div>failed to load</div>
