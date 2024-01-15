@@ -7,7 +7,7 @@ const Search = () => {
     // let query = useParams().query;
     const router = useRouter()
     const { query } = router.query
-    const { data, error } = useSWR(`https://api.consumet.org/anime/gogoanime/${query}`)
+    const { data, error } = useSWR(`https://animexer1-api.vercel.app/anime/gogoanime/${query}`)
   
   if (error) return <div>failed to load {console.log(error)}</div>
   if (!data) return <div></div>
