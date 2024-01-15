@@ -6,7 +6,7 @@ import cheerio from 'cheerio';
   try {
       
 
-      let response = await fetch(`https://gogoanime.tel/category/${id}`);
+      let response = await fetch(`https://gogoanime3.net/category/${id}`);
     let res= await response.text()
       const $ = cheerio.load(res);
 
