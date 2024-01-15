@@ -8,7 +8,7 @@ import AnimeGateLogo from '../assests/logo.jpg'
 const Navbar = () => {
   const [query, setQuery] = useState("");
   // const [data, setData] = useState({})
-  const { data, error } = useSWR(query.length == 0 ? null :`https://api.consumet.org/meta/anilist/advanced-search?query=${query}&type=ANIME&perPage=5`)
+  const { data, error } = useSWR(query.length == 0 ? null :`https://animexer1-api.vercel.app/meta/anilist/advanced-search?query=${query}&type=ANIME&perPage=5`)
   const router = useRouter()
 
   
